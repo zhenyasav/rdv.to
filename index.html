@@ -12,18 +12,31 @@
         gtag('js', new Date());
         gtag('config', 'UA-154020903-1');
     </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelector('.float-dock').classList.add('showing');
+            }, 1000);
+        });
+    </script>
 </head>
 
 <body id="rdvto" class="debug">
-    <div id="nav"><button type="button"><span>meet</span></button><button type="button"><span>fresh</span></button></button><button type="button">☉<span>nearby</span></button></button><button type="button"><span>best</span><button type="button"><span>IDs</span><button type="button"><span>sync</span></button></div>
+    <div class="float-dock">
+        <div id="nav"><button type="button"><span>meet</span></button><button type="button"><span>fresh</span></button></button><button type="button">☉<span>nearby</span></button></button><button type="button"><span>best</span><button type="button"><span>IDs</span><button type="button"><span class="online">sync</span></button></div>
+    </div>
+
     <p style="text-align: left;"><cite>Early demo <a href="/">programmer</a> art inviting <a href="/cdn-cgi/l/email-protection#6e1e0d2e1c1c070b1c400d0f">feedback</a>, not clicks.<br/>Nothing works, but everything is free except the font family.<br/>&ldquo;Rendez-vous&rdquo;, commonly abbreviated RDV, is French for &ldquo;appointment&rdquo;.<br/><a href="#notes">Technical notes</a> conclude.</cite></p>
-    <h1>rendezvous</h1>
+
+    <h1>rdv</h1>
     <h2>New to rdv.to?</h2>
+
     <span class="icon">⇌</span>
     <p>The social network mesh for activists, neighbors, strangers and loved ones.
     <br/>Frictionless as a richer web where everything can be shared in place,
     <br/>yet true privacy controls because we need control back.
     <br/>Mobile web first, browser &amp; cloud second, always safe from technocratic cyberstalking.</p>
+    
     <span class="icon">⭇</span>
     <p>Follow a QR code or link like <tt><a href="https://rdv.to/apollo">rdv.to/apollo</a></tt>,
     <br/>optionally identified like <tt><a href="https://rdv.to/apollo#2jPkCgFVrvkjFa8KSBpG-SRzrJTsXcOJuN0ad8uKlgU">rdv.to/apollo#2jPkCgFVrvkjFa8KSBpG-SRzrJTsXcOJuN0ad8uKlgU</a></tt>,
@@ -55,7 +68,7 @@
     <p>The web needs smoother yet controlled micro-payments, there's a lot to be done.</p>
     <span class="icon">⨷</span>
     <p>Unless mentioned by name, identifiers are always anonymous but linkable,
-    <br/>like <tt>H0Kew7NkgmhDx_o61_NcOhQpizaK4NzUxFi7SPVLsB0</tt>.
+    <br/>like <tt>H0Kew7NkgmhDx-o61-NcOhQpizaK4NzUxFi7SPVLsB0</tt>.
     <br/>We route your apps through anonymous connections securely on the fly.</p>
     <span class="icon">☀</span>
     <p>Our platform builds on end-to-end encryption and we only store what we need.
