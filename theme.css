@@ -213,7 +213,7 @@ body#home h1 {
 		color: #bbb;
 		background-color: #111;
 	}
-	body:before {
+	.background {
 		content: ' ';
 		position: fixed;
 		top: 0;
@@ -226,10 +226,10 @@ body#home h1 {
 		background-attachment: fixed;
 		background-size: cover;
 		filter:  brightness(0.25) blur(0px);
-		transition: all 600ms ease-in-out;
+		transition: filter 600ms ease-in-out;
 	}
 
-	body.scrolled:before {
+	body.scrolled .background {
 		filter:  brightness(0.15) blur(10px);
 	}
 

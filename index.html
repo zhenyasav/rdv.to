@@ -16,11 +16,18 @@
         document.addEventListener('scroll', () => {
             const isTop = window.scrollY == 0;
             document.body.classList.toggle('scrolled', !isTop);
+
+            const P = window.scrollY / (window.document.body.scrollHeight - window.innerHeight);
+
+            const offsetRange = 300;
+            const bg = document.querySelector('.background');
+            bg.style.backgroundPosition = `0px ${(-P * offsetRange).toFixed(1)}px`;
         })
     </script>
 </head>
 
 <body id="rdvto">
+    <div class="background"></div>
     <div id="nav"><button type="button"><span>meet</span></button><button type="button"><span>fresh</span></button></button><button type="button">☉<span>near</span></button></button><button type="button"><span>best</span><button type="button"><span>IDs</span><button type="button" style="border-bottom: 1px solid green"><span>sync</span></button></div>
     <p style="text-align: left;"><cite>Early demo <a href="/">programmer</a> art inviting <a href="/cdn-cgi/l/email-protection#b6c6d5f6c4c4dfd3c498d5d7">feedback</a>, not clicks.<br/>Nothing works, but everything is free except the font family.<br/>&ldquo;Rendez-vous&rdquo;, commonly abbreviated RDV, is French for &ldquo;appointment&rdquo;.<br/><a href="#notes">Technical notes</a> conclude.</cite></p>
     <div class="title">
